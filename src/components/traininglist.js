@@ -3,6 +3,8 @@ import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community/dist/styles/ag-grid.css";
 import "ag-grid-community/dist/styles/ag-theme-material.css";
 import moment from "moment";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { Button } from "@mui/material";
 
 export default function Traininglist() {
   const [gridApi, setGridApi] = useState(null);
@@ -11,11 +13,30 @@ export default function Traininglist() {
 
   const gridRef = useRef();
 
-  function dateFormatter(date) {
-    return moment(date).format("MMM D YYYY h:mm");
+  function dateFormatter(params) {
+    console.log(params);
+    return moment(params.value).format("MMM D YYYY h:mm");
   }
 
   const columns = [
+    {
+      flex: 1,
+      headerName: "",
+      field: "id",
+      resizable: true,
+      sortable: false,
+      filter: false,
+      cellRendererFramework: (params) => {
+        const url = `https://customerrest.herokuapp.com/api/trainings/${params.data.id}`;
+        return (
+          <div>
+            <Button color="warning" onClick={() => deleteTraining(url)}>
+              <DeleteIcon />
+            </Button>
+          </div>
+        );
+      },
+    },
     {
       flex: 1,
       headerName: "Activity",
@@ -38,14 +59,25 @@ export default function Traininglist() {
       sortable: true,
       filter: true,
     },
+
+    {
+      flex: 1,
+      headerName: "Customer",
+      field: "customer",
+      sortable: true,
+      filter: true,
+      cellRendererFramework: (params) => {
+        return params.value.firstname + " " + params.value.lastname;
+      },
+    },
   ];
 
   useEffect(() => fetchData(), []);
 
   const fetchData = () => {
-    fetch("https://customerrest.herokuapp.com/api/trainings")
+    fetch("https://customerrest.herokuapp.com/gettrainings")
       .then((response) => response.json())
-      .then((data) => setTrainings(data.content));
+      .then((data) => setTrainings(data));
   };
 
   function onGridReady(params) {
@@ -55,6 +87,16 @@ export default function Traininglist() {
 
   const onFilterTextChange = (e) => {
     gridApi.setQuickFilter(e.target.value);
+  };
+
+  const deleteTraining = (url) => {
+    if (
+      window.confirm("Are you sure you want to delete the selected training?")
+    ) {
+      fetch(url, { method: "DELETE" })
+        .then((res) => fetchData())
+        .catch((err) => console.error(err));
+    }
   };
 
   return (

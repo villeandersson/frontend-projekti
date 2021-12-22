@@ -1,0 +1,178 @@
+[
+  {
+    "id": 16,
+    "date": "2021-12-22T17:31:24.071+00:00",
+    "duration": 60,
+    "activity": "Spinning",
+    "customer": {
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Johnson",
+      "streetaddress": "5th Street",
+      "postcode": "23110",
+      "city": "Flintsone",
+      "email": "john@mail.com",
+      "phone": "232-2345540"
+    }
+  },
+  {
+    "id": 17,
+    "date": "2021-12-23T17:31:24.012+00:00",
+    "duration": 30,
+    "activity": "Gym training",
+    "customer": {
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Johnson",
+      "streetaddress": "5th Street",
+      "postcode": "23110",
+      "city": "Flintsone",
+      "email": "john@mail.com",
+      "phone": "232-2345540"
+    }
+  },
+  {
+    "id": 18,
+    "date": "2021-12-24T17:31:24.012+00:00",
+    "duration": 90,
+    "activity": "Gym training",
+    "customer": {
+      "id": 2,
+      "firstname": "Mary",
+      "lastname": "Philips",
+      "streetaddress": "Hill Street 3",
+      "postcode": "23322",
+      "city": "Flintsone",
+      "email": "m.philips@mail.com",
+      "phone": "232-310122"
+    }
+  },
+  {
+    "id": 19,
+    "date": "2021-12-22T19:31:24.012+00:00",
+    "duration": 60,
+    "activity": "Fitness",
+    "customer": {
+      "id": 2,
+      "firstname": "Mary",
+      "lastname": "Philips",
+      "streetaddress": "Hill Street 3",
+      "postcode": "23322",
+      "city": "Flintsone",
+      "email": "m.philips@mail.com",
+      "phone": "232-310122"
+    }
+  },
+  {
+    "id": 20,
+    "date": "2021-12-25T17:31:24.012+00:00",
+    "duration": 60,
+    "activity": "Spinning",
+    "customer": {
+      "id": 2,
+      "firstname": "Mary",
+      "lastname": "Philips",
+      "streetaddress": "Hill Street 3",
+      "postcode": "23322",
+      "city": "Flintsone",
+      "email": "m.philips@mail.com",
+      "phone": "232-310122"
+    }
+  },
+  {
+    "id": 21,
+    "date": "2021-12-26T17:31:24.012+00:00",
+    "duration": 45,
+    "activity": "Gym training",
+    "customer": {
+      "id": 3,
+      "firstname": "Dan",
+      "lastname": "Davidson",
+      "streetaddress": "32 Main Road",
+      "postcode": "23130",
+      "city": "Flintsone",
+      "email": "dan.d@mail.com",
+      "phone": "232-1227006"
+    }
+  },
+  {
+    "id": 22,
+    "date": "2021-12-27T17:31:24.012+00:00",
+    "duration": 45,
+    "activity": "Zumba",
+    "customer": {
+      "id": 3,
+      "firstname": "Dan",
+      "lastname": "Davidson",
+      "streetaddress": "32 Main Road",
+      "postcode": "23130",
+      "city": "Flintsone",
+      "email": "dan.d@mail.com",
+      "phone": "232-1227006"
+    }
+  },
+  {
+    "id": 23,
+    "date": "2021-12-22T17:31:24.088+00:00",
+    "duration": 60,
+    "activity": "Zumba",
+    "customer": {
+      "id": 3,
+      "firstname": "Dan",
+      "lastname": "Davidson",
+      "streetaddress": "32 Main Road",
+      "postcode": "23130",
+      "city": "Flintsone",
+      "email": "dan.d@mail.com",
+      "phone": "232-1227006"
+    }
+  },
+  {
+    "id": 24,
+    "date": "2021-12-22T17:31:24.089+00:00",
+    "duration": 90,
+    "activity": "Jogging",
+    "customer": {
+      "id": 6,
+      "firstname": "Sally",
+      "lastname": "Gareth",
+      "streetaddress": "4 Goldfield Road",
+      "postcode": "22722",
+      "city": "Flintsone",
+      "email": "s.gareth@mail.com",
+      "phone": "232-1227006"
+    }
+  },
+  {
+    "id": 25,
+    "date": "2021-12-28T17:31:24.012+00:00",
+    "duration": 60,
+    "activity": "Gym training",
+    "customer": {
+      "id": 6,
+      "firstname": "Sally",
+      "lastname": "Gareth",
+      "streetaddress": "4 Goldfield Road",
+      "postcode": "22722",
+      "city": "Flintsone",
+      "email": "s.gareth@mail.com",
+      "phone": "232-1227006"
+    }
+  },
+  {
+    "id": 26,
+    "date": "2022-01-01T00:00:00.000+00:00",
+    "duration": 45,
+    "activity": "Padel",
+    "customer": {
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Johnson",
+      "streetaddress": "5th Street",
+      "postcode": "23110",
+      "city": "Flintsone",
+      "email": "john@mail.com",
+      "phone": "232-2345540"
+    }
+  }
+]
