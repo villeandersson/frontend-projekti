@@ -9,6 +9,7 @@ import "ag-grid-community/dist/styles/ag-theme-material.css";
 import Addcustomer from "./addcustomer";
 import Editcustomer from "./editcustomer";
 import Addtraining from "./addtraining";
+import Stats from "./stats";
 
 export default function Customerlist() {
   const [gridApi, setGridApi] = useState(null);

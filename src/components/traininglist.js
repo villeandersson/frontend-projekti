@@ -15,7 +15,7 @@ export default function Traininglist() {
 
   function dateFormatter(params) {
     console.log(params);
-    return moment(params.value).format("MMM D YYYY h:mm");
+    return moment(params.value).format("MMM D YYYY hh:mm");
   }
 
   const columns = [

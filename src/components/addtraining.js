@@ -9,9 +9,6 @@ import DialogTitle from "@mui/material/DialogTitle";
 
 import AddIcon from "@mui/icons-material/Add";
 
-import moment from "moment";
-import DateAdapter from "@mui/lab/AdapterMoment";
-
 import "react-datepicker/dist/react-datepicker.css";
 
 export default function Addtraining(props) {
@@ -22,7 +19,6 @@ export default function Addtraining(props) {
     duration: "",
     customer: props.id,
   });
-  const [date, setDate] = React.useState(new Date());
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -60,6 +56,7 @@ export default function Addtraining(props) {
             variant="standard"
           />
           <TextField
+            style={{ marginTop: 40 }}
             name="date"
             label="Date"
             type="datetime-local"
