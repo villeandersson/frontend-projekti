@@ -1,6 +1,9 @@
 {
   "name": "personal-trainer",
   "version": "0.1.0",
+  "engines": {
+    "node": "v14.18.1"
+  },
   "private": true,
   "dependencies": {
     "@date-io/moment": "^2.11.0",
