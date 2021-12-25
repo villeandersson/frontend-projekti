@@ -39,6 +39,7 @@ export default function Addcustomer(props) {
   return (
     <div>
       <Button
+        style={{ marginTop: 15, marginBottom: 15 }}
         sx={{ mt: 2 }}
         variant="contained"
         color="primary"

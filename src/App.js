@@ -22,13 +22,11 @@ function App() {
           <Link to="/customers">CUSTOMERS</Link>{" "}
           <Link to="/trainings">TRAININGS</Link>{" "}
           <Link to="/calendar">CALENDAR</Link>{" "}
-          <Link to="/stats">STATISTICS</Link>
         </div>
         <Routes>
           <Route path="/customers" element={<Customerlist />} />
           <Route path="/trainings" element={<Traininglist />} />
           <Route path="/calendar" element={<Calendarscreen />} />
-          <Route path="/stats" element={<Stats />} />
         </Routes>
       </BrowserRouter>
     </div>
