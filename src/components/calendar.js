@@ -1,5 +1,4 @@
 import * as React from "react";
-import Paper from "@material-ui/core/Paper";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { withStyles } from "@material-ui/core/styles";
 import { ViewState } from "@devexpress/dx-react-scheduler";
@@ -122,7 +121,7 @@ export default function Calendar() {
   }, [setData, setLoading]);
 
   return (
-    <Paper>
+    <div>
       <Scheduler data={data} height={660}>
         <ViewState
           currentDate={currentDate}
@@ -143,6 +142,6 @@ export default function Calendar() {
         <AppointmentTooltip showOpenButton showCloseButton />
         <AppointmentForm readOnly />
       </Scheduler>
-    </Paper>
+    </div>
   );
 }
