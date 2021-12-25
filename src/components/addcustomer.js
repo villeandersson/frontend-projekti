@@ -41,7 +41,7 @@ export default function Addcustomer(props) {
       <Button
         sx={{ mt: 2 }}
         variant="contained"
-        color="info"
+        color="primary"
         onClick={handleClickOpen}
       >
         Add new customer
