@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@date-io/moment": "^2.11.0",
+    "@devexpress/dx-react-scheduler": "^2.7.6",
     "@devexpress/dx-react-scheduler-material-ui": "^2.7.6",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
