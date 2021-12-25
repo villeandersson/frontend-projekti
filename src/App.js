@@ -19,12 +19,13 @@ function App() {
             fontFamily: "Franklin Gothic Medium",
           }}
         >
-          <Link to="/">CUSTOMERS</Link> <Link to="/trainings">TRAININGS</Link>{" "}
+          <Link to="/customers">CUSTOMERS</Link>{" "}
+          <Link to="/trainings">TRAININGS</Link>{" "}
           <Link to="/calendar">CALENDAR</Link>{" "}
           <Link to="/stats">STATISTICS</Link>
         </div>
         <Routes>
-          <Route path="/" element={<Customerlist />} />
+          <Route path="/customers" element={<Customerlist />} />
           <Route path="/trainings" element={<Traininglist />} />
           <Route path="/calendar" element={<Calendarscreen />} />
           <Route path="/stats" element={<Stats />} />
